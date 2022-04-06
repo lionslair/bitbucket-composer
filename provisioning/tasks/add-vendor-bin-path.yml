@@ -1,0 +1,12 @@
+---
+- name: Add vendor bin dir to root .profile
+  lineinfile:
+    path: /root/.profile
+    line: 'PATH="/vendor/bin:$PATH"'
+  tags: ['paths']
+
+- name: Add vendor bin dir to root .bashrc
+  lineinfile:
+    path: /root/.bashrc
+    line: 'PATH="/vendor/bin:$PATH"'
+  tags: ['paths']

@@ -1,0 +1,4 @@
+ansible_python_interpreter: python3
+nodejs_install_npm_user: root
+
+php_enable_webserver: false
