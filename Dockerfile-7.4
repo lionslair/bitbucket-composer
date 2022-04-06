@@ -3,6 +3,8 @@ LABEL maintainer="Nathan Rzepecki <nathan@lionslair.net.au>"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+ENV pip_packages "ansible"
+
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
